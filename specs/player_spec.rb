@@ -7,8 +7,9 @@ require_relative('../board.rb')
 class TestPlayer < MiniTest::Test
 
 def setup
-  @player1 = Player.new("Martin",[])
-  @player2 = Player.new("Pedro", [])
+  @player1 = Player.new("Martin")
+  @player2 = Player.new("Pedro")
+  
 end  
 
   def test_check_position
@@ -21,4 +22,5 @@ end
     assert_equal(3, @player1.check_position)
   end
 
+ 
 end

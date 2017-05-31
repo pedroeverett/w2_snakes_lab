@@ -10,4 +10,8 @@ class Dice
     return @number[2]
   end 
 
+def roll
+  @number.shuffle.first
+end
+
 end
